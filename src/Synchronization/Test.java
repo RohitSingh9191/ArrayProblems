@@ -15,8 +15,7 @@ public class Test {
         }catch(Exception e){
                 System.out.println(e);
         } 
-        System.out.println(counter.getCount());
-
+        System.out.println(counter.getCount());\
 
     }
 
