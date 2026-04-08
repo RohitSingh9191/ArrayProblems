@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class SecondLargestNumber {
 
     public static void main(String[] args) {
-        int[] nums = {11,5,2,7,3,6,9,6,3,1,8,4,10} ;   
+        int[] nums = {10, 10, 5} ;   
         Integer largest = Integer.MIN_VALUE;
         Integer secondLargest = Integer.MIN_VALUE;
 
@@ -19,7 +19,7 @@ public class SecondLargestNumber {
             if(largest < num){
                 secondLargest = largest;
                 largest = num;
-            }else if(secondLargest < num){
+            }else if(num > secondLargest && num != largest){
                     secondLargest = num;
             }
         }

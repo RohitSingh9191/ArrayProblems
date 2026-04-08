@@ -9,7 +9,6 @@ public class ExecutorsFraameworkFuture {
     public static void main(String[] args) throws ExecutionException, InterruptedException{
         ExecutorService executor = Executors.newSingleThreadExecutor();
 
-
         executor.submit(()-> 1+2);
 
         executor.shutdown();
@@ -21,7 +20,6 @@ public class ExecutorsFraameworkFuture {
         executor.isShutdown();
         
         executor.isTerminated();
-
 
     }    
 
